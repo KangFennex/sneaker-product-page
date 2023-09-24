@@ -50,7 +50,7 @@ To fullfil the challenge's requirements, users should be able to:
 
 This project was an amazing opportunity to hone my skills with state management (Zustand), animate the cart and the sidebar menu (Framer-Motion), and styling with Tailwind.
 
-For the #state management, I had used Redux store before (see my previous Safeway project), but for such a simple web app with a single product, I opted for the smaller and faster state management solution Zustand. I was pleasantly surprised at how quickly I was able to set up the store and access the data from the cart. It will definitely be my go-to solution in the future for my more simple needs in terms of state management. 
+For the state management, I had used Redux store before (see my previous Safeway project), but for such a simple web app with a single product, I opted for the smaller and faster state management solution Zustand. I was pleasantly surprised at how quickly I was able to set up the store and access the data from the cart. It will definitely be my go-to solution in the future for my more simple needs in terms of state management. 
 
 It was also a great opportunity to play with Framer-Motion, a tool I want to delve into more in my future projects. I went for two rather simple animations for the sidebar menu and the cart, with a slight unrolling effect for the latter.
 
