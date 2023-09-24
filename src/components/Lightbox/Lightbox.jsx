@@ -3,7 +3,6 @@ import previous from "../../assets/icon-previous.svg";
 import next from "../../assets/icon-next.svg";
 import { useState, useEffect, useRef } from "react";
 import closeIcon from "../../assets/icon-close.svg"
-import { AnimatePresence } from "framer-motion";
 
 const Lightbox = ({ handleClick, currentIndex }) => {
   const [currentIndexLightbox, setCurrentIndexLightbox] = useState(currentIndex);

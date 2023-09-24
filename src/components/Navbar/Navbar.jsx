@@ -15,7 +15,6 @@ const Navbar = () => {
   const [isCartVisible, setIsCartVisible] = useState(false);
   const cartItem = updateQuantity((state) => state.cart[0]);
   const menuRef = useRef();
-  const cartRef = useRef()
   const handleClick = () => {
     setMenuVisible(!isMenuVisible);
   };
