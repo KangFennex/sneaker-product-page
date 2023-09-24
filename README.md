@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Frontend Mentor - E-commerce product page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To fullfil the challenge's requirements, users should be able to:
 
-### `npm test`
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./screenshot.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- Tailwind
+- Zustand
+- Framer-Motion
+- Semantic HTML5 markup
+- Mobile-first workflow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project was an amazing opportunity to hone my skills with state management (Zustand), animate the cart and the sidebar menu (Framer-Motion), and styling with Tailwind.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For the #state management, I had used Redux store before (see my previous Safeway project), but for such a simple web app with a single product, I opted for the smaller and faster state management solution Zustand. I was pleasantly surprised at how quickly I was able to set up the store and access the data from the cart. It will definitely be my go-to solution in the future for my more simple needs in terms of state management. 
 
-## Learn More
+It was also a great opportunity to play with Framer-Motion, a tool I want to delve into more in my future projects. I went for two rather simple animations for the sidebar menu and the cart, with a slight unrolling effect for the latter.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It was also my first time using Tailwind. I personally stand of the side of purist and prefer having separate style sheets, with SASS being my favourite preprocessor. However I wanted to make sure to know enough about Tailwind to build an entire web app with it. I was impressed by the simplicity of its classnames and once I got a hang of it I enjoyed how quickly I was able to style elements. I did find it limiting in some aspect, such as exact positioning for an element with an absolute position as well as using it to colorize elements with customs colors. In those cases I went to the CSS-route.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+One challenge I encountered was the lightbox. I wanted to create one manually instead of relying on a library. At first I thought of enlarging the selected picture but it clearly would affect the styling of the background. When I then tried to mount another Carousel from the carousel itself with a onClick event, it affected the event itself and ended up mounting a new carousel everytime I clicked on the main image.
 
-### Code Splitting
+My solution was to create a separate lightbox, and imported the image iteration from a separate file which the carousel used as well. In the future, I'd like to smooth it apparition on the screen as well as the image sliding effect. This time however I think I will rely on an external library or Framer-Motion.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Finally, one element I am proud of is the way the menu disappears if you resize the window or click outside of it. I applied the same logic to the cart and the menu except that for the cart I left it open even if you click elsewhere, as most website do.
 
-### Analyzing the Bundle Size
+One remaining issue is the position of the cart when the screen is in medium-size. I left this issue to start working on a new project but this is something I want to be aware of in the future.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Kangkm](https://github.com/KangFennex)
+- Frontend Mentor - [@KangFennex](https://www.frontendmentor.io/profile/KangFennex)
